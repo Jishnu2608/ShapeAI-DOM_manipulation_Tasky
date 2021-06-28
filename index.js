@@ -171,4 +171,10 @@ const saveEditchanges = (event) => {
   });
 
   updateLocalStorage();
+
+  taskTitle.setAttribute("contenteditable", "false");
+  taskDescription.setAttribute("contenteditable", "false");
+  taskType.setAttribute("contenteditable", "false");
+  submitButton.innerHTML = "Open Task";
+  submitButton.removeAttribute("onclick");
 };
